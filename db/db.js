@@ -8,5 +8,12 @@ var connection = mysql.createConnection({
     password: dbsetting.password
 });
 
-connection.connect();
+connection.connect(function(err){
+    if(err){
+        console.log(err);
+    }
+    else{
+        console.log('connected...');
+    }
+});
 module.exports = connection;

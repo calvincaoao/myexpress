@@ -1,0 +1,2 @@
+# filter debug files
+npm-debug.log.*

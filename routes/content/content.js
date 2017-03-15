@@ -1,18 +1,13 @@
 var express = require('express');
 var router = express.Router();
-//ar mysql = require('../../db/db.js');
+var connection = require('../../db/db.js');
 
-var mysql = require('mysql');
-var dbsetting = require('../../config/dbsetting');
+//var connection = require('mysql');
+//var dbsetting = require('../../config/dbsetting');
 
+/*
 var connection = mysql.createConnection({
-   /*
-    host: 'localhost',
-    user: 'caoc',
-    database: 'customer',
-    password: '1234'
-    */
-
+ 
     host: dbsetting.host,
     user: dbsetting.username,
     database: dbsetting.database,
@@ -28,6 +23,8 @@ connection.connect(function(err){
     }
 
 });
+
+*/
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
